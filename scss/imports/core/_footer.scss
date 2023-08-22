@@ -1,0 +1,38 @@
+// css footer
+footer{
+    background-color: black;
+    padding: 20px 0;
+    @include text(12px, fmain, normal,$white-cl,none);
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .copy{
+        opacity: 0.6;
+    }
+    .backtotop{
+        cursor: pointer;
+        p{
+            text-transform: uppercase;
+            color: $white-cl;
+            opacity: 0.6;
+        }
+    }
+    .logo{
+        @include mid();
+
+        
+    }
+    @include xs {
+        .container{
+            flex-direction: column;
+            gap: 40px;
+        }
+        .logo{
+             @include mid(initial);
+        }
+    }
+
+}
